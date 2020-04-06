@@ -1,0 +1,30 @@
+{{#if session.admin}}
+<div class="centre">
+    <p>Vous êtes actuellement connecté sur la partie administrateur du projet WROOM</p>
+
+</div>
+{{else}}
+<div class="administration">
+    <h1>Administration</h1>
+
+      <form class="centre" method="POST" action="#" class="form-example">
+          <div class="form-example">
+            <span>  Login : </span>
+              <input size="25" type="text" name="login" id="login" required>
+          </div>
+          <div class="form-example">
+            <span>  Mot de passe : </span>
+              <input size="25" type="password" name="password" id="password" required>
+          </div>
+          <div class="boutons">
+
+                   <input  type="reset" value="Annuler ">
+                    <input  type="submit" value="Connexion ">
+          </div>
+
+      </form>
+    </div>
+
+
+
+{{/if}}

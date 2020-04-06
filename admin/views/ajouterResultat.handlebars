@@ -1,0 +1,51 @@
+<div class="centre">
+<h1>Saisie des résultats</h1>
+
+<div class="flexbetween">
+<table>
+      <tr>
+         <th></th>
+         <th>Rang</th>
+         <th>Pilote</th>
+
+         <th>Temps</th>
+         <th>Points</th>
+      </tr>
+
+      {{#each classementGrandPrix}}
+      <tr>
+         <td><a  href="/supprimerResultat/{{this.pilnum}}/{{this.gpnum}}"><img  src="/image/act_delete.png " alt="act_delete"> </a></td>
+         <td>{{this.rang}}</td>
+         <td>{{this.pilote}}</td>
+         <td>{{this.tempscourse}}</td>
+         <td>{{this.Points}}</td>
+
+      </tr>
+      {{/each}}
+
+      {{#ifCond  NombrePiloteDansLaCourse.0.NbPiloteCircuit '<' 10}}
+      <tr>
+        <th>{{inc  NombrePiloteDansLaCourse.0.NbPiloteCircuit}}</th>
+        <form method="get" action="/ajouterResultatResultat/{{classementGrandPrix.0.gpnum}}">
+          <th><select name="pilnum">
+              {{#each NomPilote}}
+                  <option value={{this.pilnum}} name="pilote">
+                      {{this.pilnom}}
+                  </option>
+              {{/each}}
+          </select></th>
+          <th> <input id="tempscourse" type="time"  name="tempscourse" step="2"> </th>
+          <th> <input type="submit" value="Valider"> </th>
+
+        <form>
+      </tr>
+       {{else}}
+
+      {{/ifCond}}
+
+
+
+   </table>
+
+   </div>
+</div>

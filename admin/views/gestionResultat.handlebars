@@ -1,0 +1,20 @@
+<div class="centre">
+    <img src="/image/cat_resultat.png " alt="cat_resultat">
+    <h1>Résultats</h1>
+    Sélectionner un grand prix :
+    <form method="GET" action="/ajouterResultat" class="form-example">
+        <div class="form-example-btn">
+
+            <select name="gpnum">
+                {{#each listeResultat}}
+                <option name="gpnum" value={{this.gpnum}}>
+                    {{this.gpnom}}
+                </option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="form-example-btn">
+            <input type="submit" value="Valider">
+        </div>
+    </form>
+</div>

@@ -1,0 +1,30 @@
+<div class="centre">
+<h1>Modification de l'écurie {{EcurieInfoModif.ecunom}} </h1>
+<form  method="POST" action="/modifierEcurieResultat/{{EcurieInfoModif.ecunum}}"class="form-example">
+ <label>Fournisseur de pneu :</label>
+ <select name="fpnum">
+        {{#each resultFournisseurPneu}}
+        <option value={{this.fpnum}} >
+            {{this.fpnom}}
+        </option>
+        {{/each}}
+    </select><br> <br>
+<label>Nom de l'écurie : </label> <input type="text" name="ecunom" value="{{EcurieInfoModif.ecunom}}"><br> <br>
+<label>Nom du directeur de l'écurie : </label> <input type="text" name="ecunomdir" value="{{EcurieInfoModif.ecunomdir}}"><br> <br>
+<label>Adresse du siège : </label> <textarea name="ecuadrsiege"  rows="3" cols="70" >{{EcurieInfoModif.ecuadrsiege}} </textarea> <br> <br>
+<label>Nombre de points de l'écurie : </label> <input type="text" name="ecupoints" value="{{EcurieInfoModif.ecupoints}}"><br> <br>
+  <label>Pays :</label>
+    <select name="paynum">
+        {{#each resultPays}}
+        <option value={{this.paynum}} >
+            {{this.paynom}}
+        </option>
+        {{/each}}
+    </select><br> <br>
+
+
+    <div class="form-example-btn">
+        <input type="submit" value="Modifier">
+    </div>
+</form>
+</div>

@@ -1,0 +1,19 @@
+<div class="centre">
+<h1> Vous venez de supprimer l'écurie  : {{EcurieInfoSuppression.ecunum}}  </h1>
+
+
+<b>Nom de l'écurie  :</b> {{EcurieInfoSuppression.ecunom}}  <br><br>
+<b>Nom du directeur  :</b> {{EcurieInfoSuppression.ecunomdir}}  <br><br>
+<b>Adresse du siège   :</b> {{EcurieInfoSuppression.ecuadrsiege}} <br><br>
+<b>Points que l'écurie possède : </b>
+{{#if EcurieInfoSuppression.ecupoints}}
+  {{EcurieInfoSuppression.ecupoints}}
+  {{else}}
+  Aucun Points
+{{/if}}    <br><br>
+<b>Situé au   : </b> {{EcurieInfoSuppression.paynom}}  <br><br>
+<b>Image : </b> <img src="/image/ecurie/{{EcurieInfoSuppression.ecuadresseimage}}" alt="ecurie"><br><br>
+
+Redirection vers la page de gestion des ecuries dans 2 secondes.
+<meta http-equiv="Refresh" content="2; url=/ecuries" />
+</div>

@@ -1,0 +1,282 @@
+    body {
+    	font-family: "Segoe UI", "DejaVu Sans",Verdana, sans-serif;
+    	background: url('/image/fond.jpg') repeat;
+		  font-size:0.8em;
+    	margin: 0;
+    	padding: 0;
+    	text-align: center;
+    	color: #000000;
+	}
+
+
+	.centre {
+		text-align: center;
+		margin : auto;
+	}
+
+	.form-example-btn{
+		margin-left:40%
+	}
+
+	form{
+		text-align: left;
+		margin : auto;
+	}
+
+	label {
+		display: block;
+		width: 150px;
+		float: left;
+		text-align: left;
+		margin-right: 2%;
+	}
+
+
+
+	.formulaire{
+		text-align: center;
+		align-content: center;
+		margin:auto
+	}
+
+	table {
+		border-collapse: collapse;
+		margin : auto;
+		margin-top:2%;
+	  }
+
+	  table, td, th {
+		border: 1px solid black;
+	  }
+
+    .monBody #container {
+    	width: 900px;
+    	margin: 0 auto;
+    	text-align: left;
+    	background:#ffffff;
+    }
+    .monBody #header {
+		    height:300px;
+    }
+	.monBody #menu {
+		height:22px;
+		color:#ffffff;
+		font-size:1.4em;
+		background:#000000;
+    }
+  .monBody #contenu {
+		 padding:20px;
+    }
+    .monBody #footer {
+    padding: 0 10px;
+		font-size:0.8em;
+		text-align:center;
+		height:150px;
+		background:url(/image/footer.jpg) no-repeat;
+    }
+	#menu a	{
+		color:#ffffff;
+		text-decoration:none;
+	}
+  #menu {
+    text-align: center;
+  }
+
+
+  /* Partie ecurie */
+
+  #PhotosDeLecurie
+  {
+	height : 80px;
+	margin-right : 5px;
+	margin-left : 5px;
+	display : flex;
+  }
+
+  .EnsemblePhotoEcurie
+  {
+	  display : inline-block;
+  }
+
+  /*Partie Ecurie */
+
+
+  /* Partie resultat */
+
+
+
+
+  /*Partie Resultat */
+
+  /*Partie Pilote */
+
+#PiloteDetail
+{
+	display:flex;
+	margin-bottom:3%;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+#Sponsor
+{
+	margin-top : 5%;
+}
+
+#Photos
+{
+	display : inline-block;
+	width : 100%;
+}
+
+#description
+{
+ margin-top : 5%;
+ margin-bottom : 5%;
+}
+
+#PhotosDuPilote
+{
+	height : 80px;
+	margin-right : 5px;
+	margin-left : 5px;
+}
+
+  #PhotoPilote
+  {
+	  height : 100px;
+  }
+
+  #sectionPilote
+  {
+	margin-left : 5%;
+	text-align: center;
+	display : flex;
+	margin-bottom : 5%;
+	display:flex;
+	flex-direction: column;
+  }
+
+  #listepilotes {
+	display:flex;
+	flex-direction: row;
+  }
+
+  #menuPilote a
+  {
+	margin-left : 3%;
+	text-decoration: none
+	}
+
+  #menuPilote
+  {
+	text-align: center;
+	border:2px solid black;
+	margin-bottom: 5%;
+	padding: 2%;
+	-moz-border-radius : 15px;
+ 	border-radius:15px;
+  }
+  /*Partie Pilote */
+
+  #LogoNode {
+      max-height: 20%;
+      max-width: 20%;
+  }
+
+  .tabpayscir img {
+    width:40px;
+ }
+
+  .tabpayscir  {
+ 	  float:right;
+ 	  padding:10px;
+ 	  border:1px solid black;
+ 	  margin:10px;
+ 	  -moz-border-radius : 15px;
+ 	  border-radius:15px;
+ }
+
+ .myboth  {
+ 	  clear:both;
+ }
+ a  {
+ 	text-decoration:none;
+ 	color:#0072ff;
+ }
+ .lienNotFound {align:center; style="background-color: #1d81b1;color: #FFFFFF;text-transform: uppercase;"}
+ .photoNotFound {
+   max-height: 40%;
+   max-width: 40%;
+}
+
+/* Connexion */
+
+.administration
+{
+	background-color: #000000;
+	padding:3%;
+	color : white;
+	text-align: center;
+}
+
+.administration div{
+	margin-bottom: 1%;
+}
+
+.boutons
+{
+
+	display: flex;
+	flex-direction : row;
+	margin-left : 30%;
+}
+/* Connexion */
+.connexion
+{
+	display : flex;
+	text-align : center;
+}
+
+input[type=submit], input[type=reset] {
+	align-content: center;
+}
+
+input[type=submit], input[type=reset] {
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+	margin-top: 2%;
+}
+input[type=submit], input[type=reset] {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+input[type=submit], input[type=reset] {
+	position:relative;
+	top:1px;
+	margin-left:3%;
+}
+
+/* Page ajout modif */
+
+input[type=text], input[type=password]
+{
+  border-radius: 30px;
+}
+
+textarea
+{
+    border-radius: 10px;
+}

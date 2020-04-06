@@ -1,0 +1,11 @@
+<div id="dernierResDiv">
+  <div >
+    <h1>{{this.title}}</h1>
+    <div class="dernierRes">
+        <h2 id="titreRes">{{this.title2}}</h2>
+        <h3>{{dernierResultat.0.gpnom}}</h3>
+        <p>{{formatDate dernierResultat.0.gpdate 'DD/MM/YYYY'}}</p>
+        <p>Date de dernière mise à jour : {{formatDate dernierResultat.0.gpdatemaj 'DD/MM/YYYY'}}</p>
+        <a href="/detailResultat/{{dernierResultat.0.gpnum}}">Voir les résultats </a>
+    </div>
+</div>

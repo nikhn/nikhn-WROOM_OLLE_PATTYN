@@ -1,0 +1,14 @@
+<div id="Sponsor">
+       <div id="SponsorListe">
+  {{#each detailSponsor}}
+    {{#if SPONOM}}
+    
+		<ul>
+         <li><b>{{this.SPONOM}}</b> ({{this.SPOSECTACTIVITE}})</li>
+        </ul>
+    {{else}}
+    Aucun sponsor
+    {{/if}}
+    {{/each}}
+        </div> 
+    </div>

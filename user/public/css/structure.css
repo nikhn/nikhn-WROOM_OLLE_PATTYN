@@ -1,0 +1,281 @@
+    body {
+    	font-family: "Segoe UI", "DejaVu Sans",Verdana, sans-serif;
+    	background: url('/image/fond.jpg') repeat;
+		  font-size:0.8em;
+    	margin: 0;
+    	padding: 0;
+    	text-align: center;
+    	color: #000000;
+    }
+    .monBody #container {
+    	width: 900px;
+    	margin: 0 auto;
+    	text-align: left;
+    	background:#ffffff;
+    }
+    .monBody #header {
+		    height:300px;
+    }
+
+    #dernierResDiv
+    {
+      display:flex;
+      justify-content : center;
+    }
+
+    .dernierRes
+    {
+      text-align : center;
+      margin-bottom : 5%;
+      border:1px solid black;
+      border-radius:15px;
+     }
+
+     #titreRes
+     {
+       text-decoration : underline;
+     }
+
+	.monBody #menu
+  {
+		height:22px;
+		color:#ffffff;
+		font-size:1.4em;
+		background:#000000;
+  }
+  .monBody #contenu {
+		 padding:20px;
+    }
+    .monBody #footer {
+    padding: 0 10px;
+		font-size:0.8em;
+		text-align:center;
+		height:150px;
+		background:url(/image/footer.jpg) no-repeat;
+    }
+	#menu a	{
+		color:#ffffff;
+		text-decoration:none;
+	}
+  #menu {
+    text-align: center;
+  }
+
+
+  /* Partie ecurie */
+
+  #PhotosDeLecurie
+  {
+	height : 80px;
+	margin-right : 5px;
+	margin-left : 5px;
+	display : flex;
+  }
+
+  .EnsemblePhotoEcurie
+  {
+	  display : inline-block;
+  }
+
+  /*Partie Ecurie */
+
+
+  /* Partie resultat */
+
+
+
+
+  /*Partie Resultat */
+
+  /*Partie Pilote */
+
+  #PiloteDetail
+  {
+    display:flex;
+    margin-bottom:3%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+   #sectionPilote
+    {
+    margin-left : 5%;
+    text-align: center;
+    display : flex;
+    margin-bottom : 5%;
+    flex-direction: column;
+    }
+
+    #listepilotes {
+    display:flex;
+    flex-wrap : wrap;
+    }
+
+    #menuPilote
+    {
+    text-align: center;
+    border:2px solid black;
+    margin-bottom: 5%;
+    padding: 2%;
+    -moz-border-radius : 15px;
+     border-radius:15px;
+    }
+
+#Sponsor
+{
+	margin-top : 5%;
+}
+
+#Photos
+{
+	display : inline-block;
+	width : 100%;
+}
+
+#description
+{
+ margin-top : 5%;
+ margin-bottom : 5%;
+}
+
+#PhotosDuPilote
+{
+	height : 80px;
+	margin-right : 5px;
+	margin-left : 5px;
+}
+
+  #PhotoPilote
+  {
+	  height : 100px;
+  }
+
+  #sectionPilote
+  {
+	margin-left : 5%;
+	text-align: center;
+	display : flex;
+	margin-bottom : 5%;
+  }
+  #menuPilote a
+  {
+	margin-left : 3%;
+	text-decoration: none
+	}
+
+  #menuPilote
+  {
+	text-align: center;
+  }
+  /*Partie Pilote */
+
+  #LogoNode {
+      max-height: 20%;
+      max-width: 20%;
+  }
+
+  .tabpayscir img {
+    width:40px;
+ }
+
+  .tabpayscir  {
+ 	  float:right;
+ 	  padding:10px;
+ 	  border:1px solid black;
+ 	  margin:10px
+ 	  -moz-border-radius : 15px;
+ 	  border-radius:15px;
+ }
+
+ .myboth
+ {
+ 	  clear:both;
+ }
+
+ a
+ {
+ 	text-decoration:none;
+ 	color:#0072ff;
+ }
+
+ .lienNotFound
+ {align:center; style="background-color: #1d81b1;color: #FFFFFF;text-transform: uppercase;"}
+
+ .photoNotFound
+ {
+   max-height: 40%;
+   max-width: 40%;
+}
+
+.tooltip
+{
+  text-decoration:none;
+  position:relative;
+}
+
+
+.tooltip span
+{
+  display:none;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  color:black;
+  background:white;
+
+}
+
+
+.tooltip span img
+{
+
+  margin:0px 8px 8px 0;
+  height : 100px;
+  width : 100px;
+  float : left;
+}
+
+.tooltip span p
+{
+  text-align : justify;
+  float : right;
+}
+
+.tooltip:hover span
+{
+  display:flex;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:1000;
+  width:auto;
+
+  border:1px solid black;
+  margin-top:12px;
+  margin-left:32px;
+  overflow:hidden;
+  padding:8px;
+}
+
+.flex {
+ display:flex;
+ flex-direction: row;
+}
+
+.flexbetween{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.imagetropgrande{
+  height :300px;
+  width : 300px;
+}
+
+
+.ResultatTable {
+  border-collapse: collapse;
+  margin : auto;
+  margin-top:2%;
+  }

@@ -1,0 +1,22 @@
+<div class="centre">
+<h1>Modification du sponsor {{SponsorInfoModif.sponom}} </h1>
+<form  method="POST" action="/modifierSponsorResultat/{{SponsorInfoModif.sponum}}"class="form-example">
+<label>Nom du sponsor : </label> <input type="text" name="sponom" value="{{SponsorInfoModif.sponom}}"><br> <br>
+ <label>Ecurie sponsorisée :</label>
+    <select name="ecunum">
+        <option value=0>
+            Aucune
+        </option>
+        {{#each resultEcurie}}
+        <option value={{this.ecunum}} >
+            {{this.ecunom}}
+        </option>
+        {{/each}}
+    </select><br> <br>
+<label>Activité du sponsor : </label> <input type="text" name="sposectactivite" value="{{SponsorInfoModif.sposectactivite}}">
+
+    <div class="form-example-btn">
+        <input type="submit" value="Modifier">
+    </div>
+</form>
+</div>

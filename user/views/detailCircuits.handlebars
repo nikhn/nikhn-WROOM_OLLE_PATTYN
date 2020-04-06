@@ -1,0 +1,18 @@
+<h1>{{detailsCircuits.0.cirnom}}</h1>
+<div class="flexbetween">
+    <div>
+        <h2>{{detailsCircuits.0.gpnom}} ({{detailsCircuits.0.paynom}})</h2>
+        <img class="imagetropgrande" src="/image/circuit/{{detailsCircuits.0.ciradresseimage}}" alt="circuit">
+        <div>
+            <p> Circuit : {{detailsCircuits.0.paynom}}</p>
+            <p> Longueur : {{detailsCircuits.0.cirlongueur}}</p>
+            <p> Nombre de spectateurs : {{detailsCircuits.0.cirnbspectateurs}}</p>
+        </div>
+    </div>
+
+    <div>
+        {{> drapeauxCircuits}}
+    </div>
+</div>
+
+<p>{{detailsCircuits.0.cirtext}}</p>

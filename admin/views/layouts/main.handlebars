@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title> {{title}}</title>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/x-icon" href="/image/favicon.png" />
+	<link  rel="stylesheet" href="/css/lightbox.css" />
+	<link rel="stylesheet" href="/css/structure.css" />
+
+</head>
+
+<body class="monBody">
+<div id="container">
+	<div id="header">
+	<img src="/image/staff_admin.jpg" alt="WROOM l'encyclopédie de la F1" />
+	</div>
+	{{#if session.admin}}
+		<div id="menu">
+		
+			<a href="/pilotes">PILOTES</a> |
+			<a href="/circuits">CIRCUITS</a> |
+			<a href="/ecuries">ECURIES</a> |
+			<a href="/resultat">RESULTATS</a> |
+			<a href="/sponsors">SPONSORS</a> |
+			<a href="http://localhost:6800/">Retour au site</a> 
+		</div>
+	{{else}}
+	
+	{{/if}}
+	<div id="contenu">
+		<br/>
+		<br/>
+			{{{body}}}
+	</div>
+				<div id="footer">
+					L'encyclopédie de la F1 depuis janvier 2020 (en NodeJS)
+					<br />
+					© IUT du Limousin DUT Informatique année 2
+					<br />
+					<br />
+                Appllication réalisée par PATTYN Nicolas & OLLE Antoine
+                <br />
+					<img src="/image/nodejs.png" id= "LogoNode" alt="Logo NodeJs" title="Logo Node.JS" />
+			</div>
+
+</div>
+</body>
+
+<script src="/js/lightbox-plus-jquery.js"></script>
+<script src="/js/lightbox.js"></script>
+</html>

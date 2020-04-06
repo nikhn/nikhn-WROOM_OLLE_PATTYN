@@ -1,0 +1,73 @@
+<h1>Détail d'une ecurie</h1>
+
+<div class="flexbetween">
+    <div>
+        <br class="myboth" />
+        <div>
+            <img id="PhotoPilote" src="/image/ecurie/{{detailEcurie.0.ecuadresseimage}} " alt="PhotoEcurie">
+            <div>
+                <b>Nom :</b>{{detailEcurie.0.ecunom}}
+                <p></p>
+                <b>Directeur : </b> {{ detailEcurie.0.ecunomdir}}
+                <b>Adresse : </b> {{detailEcurie.0.ecuadrsiege}} <p></p>
+                <b>Pays:</b> {{detailEcurie.0.paynom}}
+            </div>
+        </div>
+
+
+        <p></p>
+        {{#if aUnPilote }}
+        <b> Pilotes : </b>
+        <p></p>
+        {{#each aUnPilote}}
+
+        <tr>
+            <td>
+                <a class="tooltip" href="/detailPilote/{{this.pilnum}}">
+                    {{this.pilnom}} {{this.pilprenom}}
+                    <span>
+                        <div class="flex">
+                          <img  class="img-infobulle" src="/image/pilote/{{this.phoadresse}}">
+
+                            {{this.pilnom}} {{this.pilprenom}}
+                            {{this.piltexte}}
+
+                        </div>
+                    </span>
+                </a>
+            </td>
+        </tr>
+        {{/each}}
+        {{else}}
+        Cette écurie ne participe pas au championnat
+        {{/if}}
+        <p></p>
+
+
+        {{#each typeVoiture}}
+        <tr>
+            <td>
+                <div class="EnsemblePhotoEcurie">
+                    <img data-title="My caption" data-lightbox="/image/ecurie/voiture/{{this.voiadresseimage}}"
+                        id="PhotosDeLecurie" src="/image/ecurie/voiture/{{this.voiadresseimage}}" alt="PhotoEcurie">
+                    {{this.voinom}}
+                    <p></p>
+                    {{this.typelibelle}}
+                </div>
+            </td>
+        </tr>
+        {{/each}}
+    </div>
+    <div>
+        <table class="tabpayscir">
+            {{#each listeEcurie}}
+            <tr>
+                <td><img src="/image/pays/{{this.payadrdrap}}" alt="drapeau du pays" />
+                    <a href="/detailEcurie/{{this.ecunum}}"> {{this.ecunom}}</a>
+                </td>
+            </tr>
+            {{/each}}
+        </table>
+    </div>
+
+</div>
